@@ -1,0 +1,306 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>TCL</title>
+  <style type="text/css">
+    body {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100% !important;
+      -ms-text-size-adjust: 100% !important;
+      -webkit-font-smoothing: antialiased !important;
+    }
+    p {
+      color: #343434;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0;
+    }
+    h1 {
+      color: #525252;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+    h2 {
+      color: #b9abab;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+    a {
+      color: #000000;
+    }
+    .bgBody {
+      background: #F6F6F6;
+    }
+
+    .bgItem {
+      background: #ffffff;
+    }
+    @media only screen and (max-width:480px) {
+
+      table[class="MainContainer"],
+      td[class="cell"] {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      td[class="specbundle"] {
+        width: 100% !important;
+        float: left !important;
+        font-size: 14px !important;
+        line-height: 18px !important;
+        display: block !important;
+        padding-bottom: 15px !important;
+      }
+
+      td[class="spechide"] {
+        display: none !important;
+      }
+
+      img[class="banner"] {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+    }
+
+    @media only screen and (max-width:540px) {
+
+      table[class="MainContainer"],
+      td[class="cell"] {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      td[class="specbundle"] {
+        width: 100% !important;
+        float: left !important;
+        font-size: 14px !important;
+        line-height: 18px !important;
+        display: block !important;
+        padding-bottom: 15px !important;
+      }
+
+      td[class="spechide"] {
+        display: none !important;
+      }
+
+      img[class="banner"] {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+    }
+  </style>
+
+  <script type="colorScheme" class="swatch active">
+  {
+    "name":"Default",
+    "bgBody":"F6F6F6",
+    "link":"52999E",
+    "color":"999999",
+    "bgItem":"ffffff",
+    "title":"555555"
+  }
+</script>
+</head>
+
+<body class='bgBody' leftpadding="0" offset="0" paddingheight="0" paddingwidth="0"
+  style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;"
+  toppadding="0">
+  <table align="center" bgcolor="#f6f6f6" border="0" cellpadding="0" cellspacing="0" class="tableContent" width="100%">
+    <tbody>
+      <tr>
+        <td>
+          <table align="center" bgcolor="#f6f6f6" border="0" cellspacing="0"
+            style="font-family:Verdana, Geneva, Tahoma, sans-serif" width="600" class="MainContainer">
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td valign="top" width="20">&nbsp;</td>
+                        <td valign="top">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td class="movableContentContainer">
+                                  <div class="movableContent"
+                                    style="border: 0px; padding-top: 0px; position: relative;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td height="20">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left" valign="middle">
+                                                  <div class="contentEditableContainer contentImageEditable">
+                                                    <div class="contentEditable">
+                                                      <img alt="TCL" data-default="placeholder" data-max-width="80"
+                                                        height="auto" src="cid:image1" width="80" /></div>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="movableContent"
+                                    style="border: 0px; padding-top: 0px; position: relative;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td height="20">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" bgcolor="#A0C8A5" style="padding:10px;">
+                                            <div class="contentEditableContainer contentTextEditable">
+                                              <div class="contentEditable">
+                                                <h1
+                                                  style="color:#ffffff; font-family: Verdana,Geneva,Tahoma,sans-serif;">
+                                                  {{ item }}</h1>
+                                              </div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        {% for key,value in context.items %}
+                                        <tr>
+                                          <td>
+                                            <table align="center" class='bgItem' border="0" cellpadding="0"
+                                              cellspacing="0" style="border:1px solid #dddddd" valign="top"
+                                              width="100%">
+                                              <tbody>
+                                                <tr>
+                                                  <td colspan="3" height="20">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="25">
+                                                  </td>
+                                                  <td>
+                                                    <table align="left" class='bgItem' border="0" cellpadding="0"
+                                                      cellspacing="0" valign="top" width="100%">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="left" valign="top">
+                                                            <div class="contentEditableContainer contentTextEditable">
+                                                              <div class="contentEditable">
+                                                                <h2
+                                                                  style="border:0;outline:none;text-decoration: none;color: #777777;font-family: Verdana,Geneva,Tahoma,sans-serif;font-weight: normal;">
+                                                                  {{ key }}</h2>
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="5">
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="left" valign="top">
+                                                            <div class="contentEditableContainer contentTextEditable">
+                                                              <div class="contentEditable" style="text-align:justify;">
+                                                                <p
+                                                                  style="border:0;outline:none;text-decoration: none;color: #343434;font-family: Verdana,Geneva,Tahoma,sans-serif;font-weight: bold;">
+                                                                  {{value}}
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="5">
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td width="25">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="middle" colspan="3" height="20"
+                                                    style="padding-left: 25px; padding-right: 25px;">
+                                                    <div
+                                                      style="width:100%; height:1px; display:inline-block; background-color:#e2e2e2;">
+                                                    </div>
+                                                  </td>
+                                                </tr>
+
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        {% endfor %}
+
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  </div>
+                                  <div class="movableContent"
+                                    style="border: 0px; padding-top: 0px; position: relative;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td height="28">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" valign="top">
+                                          <div class="contentEditableContainer contentTextEditable">
+                                            <div class="contentEditable">
+                                              <p
+                                                style="color:#A8B0B6; font-size:13px;line-height: 16px; font-family: Verdana,Geneva,Tahoma,sans-serif;">
+                                                Copyright 2020 True Cost Label. all the rights reserved.</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  </div>
+                                  <div class="movableContent"
+                                    style="border: 0px; padding-top: 0px; position: relative;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td height="28"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td valign="top" width="20">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</html>

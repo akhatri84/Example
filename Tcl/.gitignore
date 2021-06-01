@@ -1,0 +1,19 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+*.log
+
+*.pot
+
+*.pyc
+
+//*/_pycache_/
+
+//_pycache_/
+
+*/_pycache_/
+
+.env
+.env*
